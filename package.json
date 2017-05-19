@@ -6,8 +6,7 @@
     "id": "cordova-sqlite-storage",
     "platforms": [
       "android",
-      "ios",
-      "windows"
+      "ios"
     ]
   },
   "repository": {
@@ -18,8 +17,7 @@
     "sqlite",
     "ecosystem:cordova",
     "cordova-android",
-    "cordova-ios",
-    "cordova-windows"
+    "cordova-ios"
   ],
   "author": "various",
   "license": "MIT",

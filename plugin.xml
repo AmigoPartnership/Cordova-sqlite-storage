@@ -78,25 +78,6 @@
                      compiler-flags="-DSQLITE_THREADSAFE=1 -DSQLITE_DEFAULT_MEMSTATUS=0 -DSQLITE_OMIT_DECLTYPE -DSQLITE_OMIT_DEPRECATED -DSQLITE_OMIT_PROGRESS_CALLBACK -DSQLITE_OMIT_SHARED_CACHE -DSQLITE_TEMP_STORE=2 -DSQLITE_OMIT_LOAD_EXTENSION -DSQLITE_ENABLE_FTS3 -DSQLITE_ENABLE_FTS3_PARENTHESIS -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_RTREE -DSQLITE_DEFAULT_PAGE_SIZE=1024" />
     </platform>
 
-    <!-- windows -->
-    <platform name="windows">
-        <js-module src="src/windows/sqlite-proxy.js" name="SQLiteProxy">
-            <runs />
-        </js-module>
-
-        <!-- SQLite3 JS module from SQLite3-WinRT/SQLite3JS: -->
-        <js-module src="src/windows/SQLite3-Win-RT/SQLite3JS/js/SQLite3.js" name="SQLite3">
-            <runs />
-        </js-module>
-
-        <!-- Thanks to AllJoyn-Cordova / cordova-plugin-alljoyn for guidance: -->
-        <framework src="src/windows/SQLite3-Win-RT/SQLite3/SQLite3.UWP/SQLite3.UWP.vcxproj" custom="true" type="projectReference" versions="10.*" />
-        <!-- Windows 8.1 / Windows Phone 8.1 not tested, not supported in this version branch:
-        <framework src="src/windows/SQLite3-Win-RT/SQLite3/SQLite3.Windows/SQLite3.Windows.vcxproj" custom="true" type="projectReference" target="windows" versions="8.1" />
-        <framework src="src/windows/SQLite3-Win-RT/SQLite3/SQLite3.WindowsPhone/SQLite3.WindowsPhone.vcxproj" custom="true" type="projectReference" target="phone" versions="8.1" />
-         -->
-    </platform>
-
 </plugin>
 
 <!-- vim: set expandtab : -->
